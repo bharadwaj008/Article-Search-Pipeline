@@ -1,0 +1,11 @@
+beautifulsoup4
+configparser
+mysql-connector-python
+numpy
+prettytable
+pymilvus==2.2.0
+requests
+scikit-learn
+selenium
+sentence-transformers
+dateparser
