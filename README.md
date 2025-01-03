@@ -62,19 +62,21 @@ collection_name = article_embeddings
 
 [selenium]
 chromedriver_path = /mnt/d/path-to-your-chromedriver/chromedriver
+
 3. Ensure MySQL and Milvus Are Running
 MySQL: Start the MySQL service on Windows:
 cmd
 net start MySQL
+
 Milvus: Start the Milvus container using Docker:
 bash
-Copy code
+
 docker run -d --name milvus-standalone -p 19530:19530 milvusdb/milvus:v2.2.0
 Pipeline Execution
 Run the entire pipeline with the shell script:
 
 bash
-Copy code
+
 ./run_pipeline.sh
 Script Details
 1. crawl_all_articles.py
@@ -90,7 +92,7 @@ Usage Example
 Run the Pipeline:
 
 bash
-Copy code
+
 ./run_pipeline.sh
 Search for Articles:
 
