@@ -22,6 +22,7 @@ Export Functionality:
 Exports query results to a CSV file for further analysis.
 
 ## Requirements
+
 1. Software Dependencies
 MySQL (Installed on Windows):
 Ensure MySQL is running and accessible from WSL.
@@ -37,17 +38,17 @@ Install the required Python libraries:
 bash
 Copy code
 pip install -r requirements.txt
-Setup Instructions
+
+### Setup Instructions
 1. Clone the Repository
 bash
 Copy code
 git clone <repository_url>
 cd run_pipeline
+
 2. Configure config.ini
 Update config.ini with the correct configurations for MySQL, Milvus, and Selenium:
 
-ini
-Copy code
 [mysql]
 host = 192.168.0.7
 user = root
@@ -64,7 +65,6 @@ chromedriver_path = /mnt/d/path-to-your-chromedriver/chromedriver
 3. Ensure MySQL and Milvus Are Running
 MySQL: Start the MySQL service on Windows:
 cmd
-Copy code
 net start MySQL
 Milvus: Start the Milvus container using Docker:
 bash
